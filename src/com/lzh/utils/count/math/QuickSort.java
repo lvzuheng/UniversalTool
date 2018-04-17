@@ -24,7 +24,7 @@ public class QuickSort {
 		int in = (i + j)/2;
 		int index = array[in];
 		while(i<j){
-			while(i<in && array[i]<index) i++;
+			while(i<in && array[i]<=index) i++;
 			if(i<in ) array[in] = array[i];
 			in = i;
 			while (j>in && array[j] >= index) j--;

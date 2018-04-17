@@ -2,6 +2,8 @@ package com.lzh.utils.test;
 
 import java.nio.ByteBuffer;
 
+import org.jsoup.select.Evaluator.Id;
+
 import com.lzh.utils.leetCode.ListNode;
 
 public class test {
@@ -10,7 +12,11 @@ public class test {
 		// TODO Auto-generated method stub
 //		Integer integer = new Integer(5);
 //		fuzhi(integer);
-		System.out.println(tuzi(2));
+//		System.out.println(tuzi(2));
+		innernn i=new innernn();
+		i.id = "1";
+		change(i);
+		System.out.println(i.id);
 	}
 
 	public static void fuzhi(Integer integer){
@@ -32,5 +38,12 @@ public class test {
 		return (int)Math.pow(2, in);
 	}
 
+	public static class innernn{
+		public String id;
+	}
+	
+	public static void change(innernn name){
+		name.id = "2";
+	}
 
 }
